@@ -1,0 +1,183 @@
+<html>
+
+<body>
+
+<head>
+	<title>First HTML Form</title>
+  </head>
+  
+<style>
+div {
+  background-image: url('bg.jpg');
+}
+</style>
+
+<style>
+h1 {text-align: center;}
+h1 {color: White}
+</style>
+
+<div class="bg-img">
+
+<h1 style="background-color:Black;"><i>RE-nice-zant<i></h1>
+
+<p style="text-align: center"><b>OPENS DAILY<br> FROM 12 PM to 10 PM <br> ALL PRICE INCLUDED TAX </b><br></p>
+
+<form action="/action_page.php" class="container">
+
+ <fieldset>
+	<legend>Order Information:</legend>
+	<label for="cname">Customer Name:</label><br>
+	<input type="text" id="cname" name="cname"><br>
+	<input type="radio" id="eat" name="where" value="eat"
+	<label for="eat">Eat Here</label><br>
+	<input type="radio" id="out" name="where" value="out"
+	<label for="out">Take Out</label><br><br>
+</fieldset>
+	
+<fieldset>
+	<legend>Main Menu:</legend>
+	<input type="checkbox" id="main1" name="main1" value="10.00"
+	<label for="main1">Spaghetti Bolognaise</label>
+		<p style="color:blue;">
+		<label for="quantity1">Quantity:</label>
+		<input type="number" id="quantity1" name="quantity1" min="1">
+		</p>
+		<p>--------------------------------------------------</p><br>
+		
+	<input type="checkbox" id="main2" name="main2" value="10.00"
+	<label for="main2">Spaghetti Carbonara</label>
+		<p style="color:blue;">
+		<label for="quantity2">Quantity:</label>
+		<input type="number" id="quantity2" name="quantity2" min="1">
+		</p>
+		<p>--------------------------------------------------</p><br>
+		
+	<input type="checkbox" id="main3" name="main3" value="ao"
+	<label for="main3">Aglio Olio</label><br>
+		<input type="radio" id="ori" name="what" value="12.00"
+		<label for="ori">Original</label>
+			<p style="color:blue;">
+			<label for="quantity3">Quantity:</label>
+			<input type="number" id="quantity3" name="quantity3" min="1">
+			</p>
+		<input type="radio" id="sea" name="what" value="15.00"
+		<label for="sea">Seafood</label>
+			<p style="color:blue;">
+			<label for="quantity4">Quantity:</label>
+			<input type="number" id="quantity4" name="quantity4" min="1">
+			</p>
+			<p>--------------------------------------------------</p><br>
+			
+	<input type="checkbox" id="main4" name="main4" value="15.00"
+	<label for="main4">Mac n Cheese</label>
+		<p style="color:blue;">
+		<label for="quantity5">Quantity:</label>
+		<input type="number" id="quantity5" name="quantity5" min="1">
+		</p>
+		<p>--------------------------------------------------</p><br>
+	
+</fieldset>
+	
+<fieldset>
+	<legend>Drinks:</legend>
+	<label for="drinks">Choose your drink:</label>
+	<select name="drink" id="drink">
+		<optgroup label="Tea">
+		  <option value="g">Green Tea</option>
+		  <option value="o">Oolong Tea</option>
+		  <option value="i">Ice Lemon Tea</option>
+		</optgroup>
+		<optgroup label="Juice">
+		  <option value="apple">Apple</option>
+		  <option value="orange">Orange</option>
+		  <option value="watermelon">Watermelon</option>
+		</optgroup>
+	</select>
+	<input type="checkbox" id="large" name="large" value="1"
+	<label for="large">Large extra $1</label><br>
+</fieldset>
+
+<fieldset>
+	<legend>Sides:</legend>
+	<input type="checkbox" id="side1" name="side1" value="6.00"
+	<label for="side1">Corndog</label><br>
+		<p style="color:blue;">
+		<label for="q1">Quantity:</label>
+		<input type="number" id="q1" name="q1" min="1">
+		</p>
+		<p>--------------------------------------------------</p><br>
+		
+	<input type="checkbox" id="side2" name="side2" value="5.00"
+	<label for="side2">Cheese balls</label><br>
+		<p style="color:blue;">
+		<label for="q2">Quantity:</label>
+		<input type="number" id="q2" name="q2" min="1">
+		</p>
+		<p>--------------------------------------------------</p><br>
+		
+	<input type="checkbox" id="side3" name="side3" value="4.00"
+	<label for="side3">Fries</label><br>
+		<p style="color:blue;">
+		<label for="q3">Quantity:</label>
+		<input type="number" id="q3" name="q3" min="1">
+		</p>
+		<p>--------------------------------------------------</p><br><br>
+</fieldset>
+
+	<input type="submit" value="Submit">
+
+</form>
+</div>
+</body>
+</html>
+
+<style>
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("bg.jpg");
+
+  /* Control the height of the image */
+  min-height: 1500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  center: 0;
+  margin: 20px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+}
+
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
